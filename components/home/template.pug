@@ -1,0 +1,6 @@
+.home
+    #scene
+        .motto.stay(data-depth='0.4') STAY
+        .motto.determined(data-depth='0.4') DETERMINED
+        canvas(ref='canvas', data-depth="0.6", v-on:click="getCoords")
+        video.background(data-depth="0.2", preload="auto", loop, autoplay="true", src="/video/bg.mp4")

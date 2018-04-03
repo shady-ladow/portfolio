@@ -1,0 +1,45 @@
+absolute-center()
+    position absolute
+    left 50% !important
+    top 50% !important
+    transform translate(-50%, -50%) !important
+
+horizontal-center()
+    display table
+    margin-right auto
+    margin-left auto
+
+vertical-center()
+    position absolute
+    top 50%
+    transform translateY(-50%)
+
+.home
+    canvas
+        absolute-center() !important
+        z-index 1
+
+.background
+    position fixed
+    right 0
+    bottom 0
+    min-width 100%
+    min-height 100%
+
+.motto
+    position absolute
+    margin-top 50vh
+    transform translateY(-50%)
+    color white
+    z-index 10
+    font-size 50px
+    font-family 'the brooklyn'
+
+.stay
+    margin-left 15%
+
+.determined
+    margin-left 70%
+
+#scene
+    position initial !important

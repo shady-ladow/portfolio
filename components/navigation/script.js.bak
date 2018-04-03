@@ -1,0 +1,32 @@
+const $ = require('jquery')
+
+export default {
+    name: 'navigation'
+    , data() {
+        return {
+            $menu: null
+            , active: null
+        }
+    }
+    , mounted() {
+        this.active1 = false
+        this.active2 = false
+        this.active3 = false
+        this.active4 = false
+        this.$menu = $(this.$refs.menu)
+        this.$menu.on('mousedown touchstart', () => {
+            if (!this.active1) this.$menu.find('.menu-item1').css({ transform: 'translate(0px,125px)' })
+            else this.$menu.find('.menu-item1').css({ transform: 'none' })
+            if (!this.active2) this.$menu.find('.menu-item2').css({ transform: 'translate(60px,105px)' })
+            else this.$menu.find('.menu-item2').css({ transform: 'none' })
+            if (!this.active3) this.$menu.find('.menu-item3').css({ transform: 'translate(105px,60px)' })
+            else this.$menu.find('.menu-item3').css({ transform: 'none' })
+            if (!this.active4) this.$menu.find('.menu-item4').css({ transform: 'translate(125px,0px)' })
+            else this.$menu.find('.menu-item4').css({ transform: 'none' })
+            this.active1 = !this.active1
+            this.active2 = !this.active2
+            this.active3 = !this.active3
+            this.active4 = !this.active4
+        })
+    }
+}

@@ -1,0 +1,27 @@
+absolute-center()
+    position absolute
+    left 50%
+    top 50%
+    transform translate(-50%, -50%)
+
+horizontal-center()
+    display table
+    margin-right auto
+    margin-left auto
+
+vertical-center()
+    position absolute
+    top 50%
+    transform translateY(-50%)
+
+.home
+    canvas
+        absolute-center()
+        z-index 1
+
+.background
+    position fixed
+    right 0
+    bottom 0
+    min-width 100%
+    min-height 100%
