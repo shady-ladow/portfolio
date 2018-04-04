@@ -1,12 +1,19 @@
 .navigation
     .radial-menu(ref='menu')
-        .menu-item1(:class='{ open: open }')
-            i.fal.fa-user
-        .menu-item2(:class='{ open: open }')
-            i.fal.fa-graduation-cap
-        .menu-item3(:class='{ open: open }')
-            i.fal.fa-code
-        .menu-item4(:class='{ open: open }', data-open="modal")
-            i.fal.fa-envelope
+        span(ref='aboutSpan')
+            a(ref='aboutLink')
+                .menu-item1(:class='{ open: open }')
+                    i.fal.fa-user(ref='aboutIcon')
+        span(ref='graduationSpan')
+            a(ref='graduationLink')
+                .menu-item2(:class='{ open: open }')
+                    i.fal.fa-graduation-cap(ref='graduationIcon')
+        span(ref='portfolioSpan')
+            a(ref='portfolioLink')
+                .menu-item3(:class='{ open: open }')
+                    i.fal.fa-code(ref='portfolioIcon')
+        span(title='Contact')
+            .menu-item4(:class='{ open: open }', data-open="modal")
+                i.fal.fa-envelope
         .mask
-            i.fal.fa-home
+            i.fal.fa-home(ref='mask')

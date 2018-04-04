@@ -5,14 +5,19 @@ const Vue = require('vue')
     , App = require('../../components/app/index.vue')
     , Home = require('../../components/home/index.vue')
 	, About = require('../../components/about/index.vue')
+	, Graduation = require('../../components/graduation/index.vue')
+	, Portfolio = require('../../components/portfolio/index.vue')
 
 class Application {
     constructor() {
         Vue.use(Router)
         const router = new Router({
-            routes: [
+			mode: 'history'
+			, routes: [
                 { path: '/', component: Home }
                 , { path: '/about', component: About }
+                , { path: '/graduation', component: Graduation }
+                , { path: '/portfolio', component: Portfolio }
             ]
         })
         this.app = new Vue({

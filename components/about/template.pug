@@ -1,4 +1,11 @@
 .about
-    canvas(ref='canvas', v-on:click="getCoords", data-depth="0.6", width='1920', height='1080')
+    .content
+        .content__container
+            p.content__container__text I'm
+            ul.content__container__list
+                li.content__container__list__item Alexia
+                li.content__container__list__item creative
+                li.content__container__list__item hard-working
+                li.content__container__list__item determined
+    canvas(ref='canvas', data-depth="0.6", width='1000', height='700')
     video.background(data-depth="0.2", preload="auto", loop, autoplay="true", src="/video/bg.mp4")
-    img(src="image/me.png")

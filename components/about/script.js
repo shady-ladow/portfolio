@@ -12,231 +12,239 @@ export default {
 		this.$canvas = $(this.$refs.canvas)
 		// Arcs
 		this._drawArc({
-			x: 1000
-			, y: 700
+			x: 500
+			, y: 350
 			, name: 'skills'
+			, radius: 30
+		})
+		this._drawArc({
+			x: 350
+			, y: 350
+			, name: 'CSS'
 			, radius: 70
 		})
 		this._drawArc({
-			x: 700
-			, y: 700
-			, name: 'js'
-			, radius: 100
-		})
-		this._drawArc({
-			x: 1270
-			, y: 700
+			x: 650
+			, y: 350
 			, name: 'PHP'
 			, radius: 70
 		})
 		this._drawArc({
-			x: 800
-			, y: 900
-			, name: 'Csharp'
+			x: 500
+			, y: 500
+			, name: 'mobile'
 			, radius: 70
 		})
 		this._drawArc({
-			x: 1200
-			, y: 900
-			, name: 'mobile'
-			, radius: 95
+			x: 500
+			, y: 200
+			, name: 'js'
+			, radius: 70
 		})
 		this._drawArc({
-			x: 800
+			x: 300
 			, y: 500
-			, name: 'CSS'
-			, radius: 90
-		})
-		this._drawArc({
-			x: 1200
-			, y: 500
-			, name: 'SEO'
-			, radius: 75
-		})
-		this._drawArc({
-			x: 590
-			, y: 900
-			, name: 'unity'
-			, radius: 60
-		})
-		this._drawArc({
-			x: 1430
-			, y: 900
 			, name: 'java'
-			, radius: 80
+			, radius: 50
 		})
 		this._drawArc({
-			x: 1450
-			, y: 700
+			x: 700
+			, y: 500
 			, name: 'kotlin'
-			, radius: 90
+			, radius: 50
 		})
 		this._drawArc({
-			x: 1460
-			, y: 500
-			, name: 'backlink'
-			, radius: 80
-		})
-		this._drawArc({
-			x: 510
-			, y: 500
+			x: 150
+			, y: 350
 			, name: 'foundation'
-			, radius: 90
+			, radius: 50
+		})
+		this._drawArc({
+			x: 850
+			, y: 350
+			, name: 'symfony'
+			, radius: 50
+		})
+		this._drawArc({
+			x: 300
+			, y: 200
+			, name: 'node'
+			, radius: 50
+		})
+		this._drawArc({
+			x: 700
+			, y: 200
+			, name: 'vue'
+			, radius: 50
+		})
+		this._drawArc({
+			x: 500
+			, y: 60
+			, name: 'socket'
+			, radius: 50
 		})
 		// Texts
 		this._drawText({
 			opacity: 0
-			, x: 1000
-			, y: 700
-			, text: 'SKILLS'
+			, x: 500
+			, y: 350
+			, text: 'Skills'
 			, name: 'tSkills'
+			, fontSize: 15
+		})
+		this._drawText({
+			opacity: 0
+			, x: 500
+			, y: 200
+			, text: 'JavaScript ES6'
+			, name: 'tJs'
+			, fontSize: 20
+		})
+		this._drawText({
+			opacity: 0
+			, x: 650
+			, y: 350
+			, text: 'PHP 7'
+			, name: 'tPHP'
+			, fontSize: 20
+		})
+		this._drawText({
+			opacity: 0
+			, x: 500
+			, y: 500
+			, text: 'Mobile'
+			, name: 'tMobile'
+			, fontSize: 20
+		})
+		this._drawText({
+			opacity: 0
+			, x: 350
+			, y: 350
+			, text: 'CSS 3'
+			, name: 'tCSS'
+			, fontSize: 20
+		})
+		this._drawText({
+			opacity: 0
+			, x: 300
+			, y: 500
+			, text: 'Java Android'
+			, name: 'tJava'
+			, fontSize: 15
 		})
 		this._drawText({
 			opacity: 0
 			, x: 700
-			, y: 700
-			, text: 'JavaScript ES6'
-			, name: 'tJs'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 1270
-			, y: 700
-			, text: 'PHP7'
-			, name: 'tPHP'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 800
-			, y: 900
-			, text: 'C#'
-			, name: 'tCsharp'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 1200
-			, y: 900
-			, text: 'Mobile'
-			, name: 'tMobile'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 800
 			, y: 500
-			, text: 'CSS3'
-			, name: 'tCSS'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 1200
-			, y: 500
-			, text: 'SEO'
-			, name: 'tSEO'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 590
-			, y: 900
-			, text: 'Unity3D'
-			, name: 'tUnity'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 1430
-			, y: 900
-			, text: 'Java Android'
-			, name: 'tJava'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 1450
-			, y: 700
 			, text: 'Kotlin'
 			, name: 'tKotlin'
+			, fontSize: 20
 		})
 		this._drawText({
 			opacity: 0
-			, x: 1460
-			, y: 500
-			, text: 'Backlinking'
-			, name: 'tBacklink'
-		})
-		this._drawText({
-			opacity: 0
-			, x: 510
-			, y: 500
-			, text: 'Foundation6'
+			, x: 150
+			, y: 350
+			, text: 'Foundation 6'
 			, name: 'tFoundation'
+			, fontSize: 15
+		})
+		this._drawText({
+			opacity: 0
+			, x: 850
+			, y: 350
+			, text: 'Symfony 3'
+			, name: 'tSymfony'
+			, fontSize: 20
+		})
+		this._drawText({
+			opacity: 0
+			, x: 300
+			, y: 200
+			, text: 'Node.js'
+			, name: 'tNode'
+			, fontSize: 20
+		})
+		this._drawText({
+			opacity: 0
+			, x: 700
+			, y: 200
+			, text: 'Vue.js'
+			, name: 'tVue'
+			, fontSize: 20
+		})
+		this._drawText({
+			opacity: 0
+			, x: 500
+			, y: 60
+			, text: 'Socket.io'
+			, name: 'tSocket'
+			, fontSize: 20
 		})
 			this._animateLayer({ name: 'skills', end: 360, duration: 600 }, () => {
-					// text
 					this._animateLayer({ name: 'tSkills', opacity: 1, duration: 300 }, () => {
-						// line
-						this._drawLine({ name: 'skillsToJS', x: 930, y: 700 })
-							._animateLayer({ name: 'skillsToJS', x: 800, y: 700 })
-						this._drawLine({ name: 'skillsToCSS', x: 950, y: 650 })
-							._animateLayer({ name: 'skillsToCSS', x: 863, y: 563 })
-						this._drawLine({ name: 'skillsToSEO', x: 1050, y: 650 })
-							._animateLayer({ name: 'skillsToSEO', x: 1152, y: 556 })
-						this._drawLine({ name: 'skillsToPHP', x: 1070, y: 700 })
-							._animateLayer({ name: 'skillsToPHP', x: 1200, y: 700 })
-						this._drawLine({ name: 'skillsToCsharp', x: 950, y: 750 })
-							._animateLayer({ name: 'skillsToCsharp', x: 850, y: 850 })
-						this._drawLine({ name: 'skillsToMobile', x: 1050, y: 750 })
-							._animateLayer({ name: 'skillsToMobile', x: 1132, y: 832 })
 						this._animateLayer({ name: 'js', end: 360, duration: 600 }, () => {
 							this._animateLayer({ name: 'tJs', opacity: 1, duration: 300 })
+							this._drawLine({ name: 'skillsToJS', x: 500, y: 320 })
+								._animateLayer({ name: 'skillsToJS', x: 500, y: 270 })
+							this._animateLayer({ name: 'node', end: 360, duration: 600 }, () => {
+								this._animateLayer({ name: 'tNode', opacity: 1, duration: 300 })
+								this._drawLine({ name: 'JStoNode', x: 430, y: 200 })
+									._animateLayer({ name: 'JStoNode', x: 350, y: 200 })
+							})
+							this._animateLayer({ name: 'vue', end: 360, duration: 600 }, () => {
+								this._animateLayer({ name: 'tVue', opacity: 1, duration: 300 })
+								this._drawLine({ name: 'JStoVue', x: 570, y: 200 })
+									._animateLayer({ name: 'JStoVue', x: 650, y: 200 })
+							})
+							this._animateLayer({ name: 'socket', end: 360, duration: 600 }, () => {
+								this._animateLayer({ name: 'tSocket', opacity: 1, duration: 300 })
+								this._drawLine({ name: 'JStoSocket', x: 500, y: 130 })
+									._animateLayer({ name: 'JStoSocket', x: 500, y: 110 })
+							})
 						})
 						this._animateLayer({ name: 'PHP', end: 360, duration: 600 }, () => {
 							this._animateLayer({ name: 'tPHP', opacity: 1, duration: 300 })
-						})
-						this._animateLayer({ name: 'Csharp', end: 360, duration: 600 }, () => {
-							this._animateLayer({ name: 'tCsharp', opacity: 1, duration: 300 })
-							this._drawLine({ name: 'CsharpToUnity', x: 730, y: 900 })
-								._animateLayer({ name: 'CsharpToUnity', x: 650, y: 900 })
-							this._animateLayer({ name: 'unity', end: 360, duration: 600 }, () => {
-								this._animateLayer({ name: 'tUnity', opacity: 1, duration: 300 })
+							this._drawLine({ name: 'skillsToPHP', x: 530, y: 350 })
+								._animateLayer({ name: 'skillsToPHP', x: 580, y: 350 })
+							this._animateLayer({ name: 'symfony', end: 360, duration: 600 }, () => {
+								this._animateLayer({ name: 'tSymfony', opacity: 1, duration: 300 })
+								this._drawLine({ name: 'PHPtoSymfony', x: 720, y: 350 })
+									._animateLayer({ name: 'PHPtoSymfony', x: 800, y: 350 })
 							})
 						})
+						// mobile
 						this._animateLayer({ name: 'mobile', end: 360, duration: 600 }, () => {
 							this._animateLayer({ name: 'tMobile', opacity: 1, duration: 300 })
-							this._drawLine({ name: 'mobileToJava', x: 1295, y: 900 })
-								._animateLayer({ name: 'mobileToJava', x: 1350, y: 900 })
+							this._drawLine({ name: 'skillsToMobile', x: 500, y: 380 })
+								._animateLayer({ name: 'skillsToMobile', x: 500, y: 430 })
+							// java android
 							this._animateLayer({ name: 'java', end: 360, duration: 600 }, () => {
 								this._animateLayer({ name: 'tJava', opacity: 1, duration: 300 })
+								this._drawLine({ name: 'mobileToJava', x: 430, y: 500 })
+									._animateLayer({ name: 'mobileToJava', x: 350, y: 500 })
 							})
-							this._drawLine({ name: 'mobileToKotlin', x: 1280, y: 850 })
-								._animateLayer({ name: 'mobileToKotlin', x: 1380, y: 755 })
+							// kotlin
 							this._animateLayer({ name: 'kotlin', end: 360, duration: 600 }, () => {
 								this._animateLayer({ name: 'tKotlin', opacity: 1, duration: 300 })
-							})
-						})
-						this._animateLayer({ name: 'SEO', end: 360, duration: 600 }, () => {
-							this._animateLayer({ name: 'tSEO', opacity: 1, duration: 300 })
-							this._drawLine({ name: 'SEOtoBacklink', x: 1275, y: 500 })
-								._animateLayer({ name: 'SEOtoBacklink', x: 1380, y: 500 })
-							this._animateLayer({ name: 'backlink', end: 360, duration: 600 }, () => {
-								this._animateLayer({ name: 'tBacklink', opacity: 1, duration: 300 })
+								this._drawLine({ name: 'mobileToKotlin', x: 570, y: 500 })
+									._animateLayer({ name: 'mobileToKotlin', x: 650, y: 500 })
 							})
 						})
 						this._animateLayer({ name: 'CSS', end: 360, duration: 600 }, () => {
 							this._animateLayer({ name: 'tCSS', opacity: 1, duration: 300 })
-							this._drawLine({ name: 'CSStoFoundation', x: 710, y: 500 })
-								._animateLayer({ name: 'CSStoFoundation', x: 600, y: 500 })
+							this._drawLine({ name: 'skillsToCSS', x: 470, y: 350 })
+								._animateLayer({ name: 'skillsToCSS', x: 420, y: 350 })
 							this._animateLayer({ name: 'foundation', end: 360, duration: 600 }, () => {
 								this._animateLayer({ name: 'tFoundation', opacity: 1, duration: 300 })
+								this._drawLine({ name: 'CSStoFoundation', x: 280, y: 350 })
+									._animateLayer({ name: 'CSStoFoundation', x: 200, y: 350 })
 							})
 						})
 					})
 			})
     }
     , methods: {
-		getCoords(event) {
-			const x = event.clientX
-				, y = event.clientY
-			console.log('X coords: ' + x + ", Y coords: " + y)
-		}
-		, _drawLine(options) {
+		_drawLine(options) {
 			const { name, x, y } = options
 			this.$canvas.drawLine({
 				name
@@ -275,6 +283,7 @@ export default {
 				, y
 				, text
 				, name
+				, fontSize
 			} = options
 			this.$canvas.drawText({
 				x
@@ -282,11 +291,11 @@ export default {
 				, text
 				, name
 				, opacity
+				, fontSize
 				, fillStyle: '#ffffff'
 				, shadowBlur: 5
 				, shadowColor: '#000000'
 				, strokeWidth: 1
-				, fontSize: 25
 				, fontFamily: 'the brooklyn'
 				, layer: true
 			})

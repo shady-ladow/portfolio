@@ -9,13 +9,7 @@ const express = require('express')
 app.set('views', './views').set('view engine', 'pug')
     .use(express.static('./public'))
     .get(
-	'/'
-	, (req, res) => {
-		res.render('layout')
-    }
-)
-	.get(
-		['/about']
+		['/', '/about', '/graduation', '/portfolio']
 		, (req, res) => {
 			res.render('layout')
 		}

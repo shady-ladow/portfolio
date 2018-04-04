@@ -1,5 +1,3 @@
-const Parallax = require('../../node_modules/parallax-js/dist/parallax.js')
-
 const $ = require('jquery')
 require('jcanvas')($, window)
 
@@ -9,14 +7,12 @@ export default {
         return {
             $canvas: null
             , scene: null
+            , _width: null
+            , _height: null
         }
     }
     , mounted() {
         this.$canvas = $(this.$refs.canvas)
-		this.$canvas[0].width = window.innerWidth
-		this.$canvas[0].height = window.innerHeight
-        this.scene = document.getElementById('scene')
-        const parallaxInstance = new Parallax(this.scene)
 
         this._drawImage({ source: '/image/silhouette.png' })
             ._drawLine({ name: 'line', x: 280, y: 100 })
@@ -44,12 +40,7 @@ export default {
             ._playAnimation()
     }
     , methods: {
-		getCoords(event) {
-			const x = event.clientX
-				, y = event.clientY
-			console.log('X coords: ' + x + ", Y coords: " + y)
-		}
-        , _drawImage(options) {
+		_drawImage(options) {
             const x = this.$canvas.width() / 2
                 , y = this.$canvas.height() / 2
                 , { source } = options
